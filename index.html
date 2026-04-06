@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Area – Home page</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ══════════ SCROLLING TOP BAR (Area logo + Learn More) ══════════ -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="nav-logo" href="#aerea">Area</a>
+      <div class="topbar-right">
+        <div class="topbar-cta">
+          <button class="btn btn-fill">Learn More ↗</button>
+        </div>
+        <button class="hamburger" id="ham" aria-label="Menu" onclick="toggleNav()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ FIXED FLOATING PILL NAV ══════════ -->
+  <nav class="nav-fixed" id="navFixed">
+    <div class="nav-pill">
+      <div class="nav-links">
+        <a href="#benefits">Benefits</a>
+        <a href="#specifications">Specifications</a>
+        <a href="#how-to">How-to</a>
+        <a href="#contact-us">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════ MOBILE DRAWER ══════════ -->
+  <div class="nav-drawer" id="drawer">
+    <a href="#benefits">Benefits</a>
+    <a href="#specifications">Specifications</a>
+    <a href="#how-to">How-to</a>
+    <a href="#contact-us">Contact Us</a>
+    <div class="drawer-cta"><button class="btn btn-fill">Learn More ↗</button></div>
+  </div>
+
+  <!-- ══════════ HERO ══════════ -->
+  <div class="hero" id="aerea">
+    <div class="hero-content">
+      <h1 class="hero-title">Browse everything.</h1>
+    </div>
+
+    <!-- Desktop mockup (≥1280px) -->
+    <div class="mockup-wrap mockup-desktop">
+      <img src="Resources/mockup/mockup-desktop.png" alt="Area dashboard on desktop" class="mockup-img">
+    </div>
+
+    <!-- Tablet mockup (800–1279px) -->
+    <div class="mockup-wrap mockup-tablet">
+      <img src="Resources/mockup/mockup-tablet.png" alt="Area dashboard on tablet" class="mockup-img">
+    </div>
+
+    <!-- Mobile mockup (≤799px) -->
+    <div class="mockup-wrap mockup-mobile">
+      <img src="Resources/mockup/mockup-mobile.png" alt="Area dashboard on mobile" class="mockup-img">
+    </div>
+
+    <!-- ══════════ TRUSTED BY ══════════ -->
+    <div class="trusted">
+      <div class="tdesc">
+        <p>Trusted by:</p>
+      </div>
+      <div class="tlogo">
+        <div class="logobox"><img src="Resources/brands/WhatsApp Image 2026-04-05 at 11.34.36 PM.jpeg" class="tlogoicon"
+            alt="Company 1"></div>
+        <div class="logobox"><img src="Resources/brands/WhatsApp Image 2026-04-05 at 11.35.01 PM.jpeg" class="tlogoicon"
+            alt="Company 2"></div>
+        <div class="logobox"><img src="Resources/brands/WhatsApp Image 2026-04-05 at 11.35.12 PM.jpeg" class="tlogoicon"
+            alt="Company 3"></div>
+        <div class="logobox"><img src="Resources/brands/WhatsApp Image 2026-04-05 at 11.35.23 PM.jpeg" class="tlogoicon"
+            alt="Company 4"></div>
+        <div class="logobox"><img src="Resources/brands/WhatsApp Image 2026-04-05 at 11.35.32 PM.jpeg" class="tlogoicon"
+            alt="Company 5"></div>
+      </div>
+    </div>
+
+    <!-- ══════════ BENEFITS ══════════ -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <div class="benefits-head">
+
+          <div class="benefits-headline">
+            <div class="benefits-intro">
+              <p class="label">Benefits</p><br />
+              <h2 class="benefits-h2">We've cracked the code.</h2><br />
+              <p class="benefits-sub">Area provides real insights, without the data overload.</p>
+            </div>
+
+            <div class="benefits-grid">
+
+              <div class="b-mainicon">
+                <img src="Resources/icons/cable.jpeg" class="b-icon-img" alt="">
+                <div class="b-text-wrap">
+                  <div class="b-title">Amplify Insights</div>
+                  <p class="b-desc">Unlock data-driven decisions with comprehensive analytics, revealing key
+                    opportunities for strategic regional growth.</p>
+                </div>
+              </div>
+
+              <div class="b-mainicon">
+                <img src="Resources/icons/world.jpeg" class="b-icon-img" alt="">
+                <div class="b-text-wrap">
+                  <div class="b-title">Control Your Global Presence</div>
+                  <p class="b-desc">Manage and track satellite offices, ensuring consistent performance and streamlined
+                    operations everywhere.</p>
+                </div>
+              </div>
+
+              <div class="b-mainicon">
+                <img src="Resources/icons/man.jpeg" class="b-icon-img" alt="">
+                <div class="b-text-wrap">
+                  <div class="b-title">Remove Language Barriers</div>
+                  <p class="b-desc">Adapt to diverse markets with built-in localization for clear communication and
+                    enhanced user experience.</p>
+                </div>
+              </div>
+
+              <div class="b-mainicon">
+                <img src="Resources/icons/mapin.jpeg" class="b-icon-img" alt="">
+                <div class="b-text-wrap">
+                  <div class="b-title">Visualize Growth</div>
+                  <p class="b-desc">Generate precise, visually compelling reports that illustrate your growth
+                    trajectories across all regions.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="landscape">
+            <img src="Resources/img2.jpeg" class="landscape-fill" alt="Landscape">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ BIG PICTURE ══════════ -->
+    <section class="big-picture">
+      <div class="container">
+        <div class="bp-grid">
+
+          <div class="bp-text-col">
+            <h2 class="bp-h2">See the Big Picture</h2>
+            <p class="bp-sub">Area turns your data into clear, vibrant visuals that show you exactly what's happening in
+              each region.</p>
+            <ul class="bp-list">
+              <li class="bp-item"><span class="bp-num">01</span><span class="bp-text">Spot Trends in Seconds: No more
+                  digging through numbers.</span></li>
+              <li class="bp-item"><span class="bp-num">02</span><span class="bp-text">Get Everyone on the Same Page:
+                  Share easy-to-understand reports with your team.</span></li>
+              <li class="bp-item"><span class="bp-num">03</span><span class="bp-text">Make Presentations Pop:
+                  Interactive maps and dashboards keep your audience engaged.</span></li>
+              <li class="bp-item"><span class="bp-num">04</span><span class="bp-text">Your Global Snapshot: Get a quick,
+                  clear overview of your entire operation.</span></li>
+            </ul>
+            <button class="btn btn-ol">Discover More</button>
+          </div>
+
+          <div class="bp-img-col">
+            <img src="Resources/img4.jpeg" class="bp-img" alt="Big picture visual">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ WHY CHOOSE ══════════ -->
+    <section class="why" id="specifications">
+      <div class="container">
+
+        <div class="why-headtohead">
+
+          <div class="why-head">
+            <p class="label">Specs</p><br />
+            <h2 class="why-h2">Why Choose Area?</h2><br>
+            <p class="why-sub">You need a solution that keeps up. That's why we developed Area. A developer-friendly
+              approach to streamline your business.</p><br>
+            <div class="btn-oldiv">
+              <button class="btn btn-ol">Discover More</button>
+
+            </div>
+          </div>
+
+        </div>
+
+        <p class="table-hint" id="tableHint">← Scroll to see all →</p>
+
+        <div class="table-wrap">
+          <table class="cmp">
+            <thead>
+              <tr>
+                <th class="col-a">Area</th>
+                <th class="col-b">WebSurge</th>
+                <th class="col-b">HyperView</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-a yes">✓ Ultra-fast browsing</td>
+                <td class="yes">✓ Fast browsing</td>
+                <td class="no">✗ Moderate speeds</td>
+              </tr>
+              <tr>
+                <td class="col-a yes">✓ Advanced AI insights</td>
+                <td class="yes">✓ Basic AI recommendations</td>
+                <td class="no">✗ No AI assistance</td>
+              </tr>
+              <tr>
+                <td class="col-a yes">✓ Seamless integration</td>
+                <td class="no">✗ Restricts customization</td>
+                <td class="no">✗ Steep learning curve</td>
+              </tr>
+              <tr>
+                <td class="col-a yes">✓ Advanced AI insights</td>
+                <td class="yes">✓ Basic AI insights</td>
+                <td class="no">✗ No AI assistance</td>
+              </tr>
+              <tr>
+                <td class="col-a yes">✓ Ultra-fast browsing</td>
+                <td class="yes">✓ Fast browsing</td>
+                <td class="no">✗ Moderate speeds</td>
+              </tr>
+              <tr>
+                <td class="col-a yes">✓ Full UTF-8 support</td>
+                <td class="no">✗ Potential display errors</td>
+                <td class="no">✗ Partial UTF-8 support</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════ TESTIMONIAL ══════════ -->
+    <section class="testi">
+      <div class="container">
+        <div class="testi-grid">
+
+          <img src="Resources/img3.jpeg" class="testi-img" alt="Testimonial">
+
+          <div class="testi-content">
+            <p class="testi-quote">"I was skeptical, but Area has completely transformed the way I manage my business.
+              The data visualizations are so clear and intuitive, and the platform is so easy to use. I can't imagine
+              running my company without it."</p>
+            <div class="testi-name">John Smith</div>
+            <div class="testi-role">Head of Data</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ MAP SUCCESS ══════════ -->
+    <section class="map-sec" id="how-to">
+      <div class="container">
+        <div class="map-head">
+          <h2 class="map-h2">Map Your Success</h2><br />
+          <button class="btn btn-ol">Discover More</button>
+          <div><br />
+            <div class="steps">
+              <div class="step-item">
+                <div class="s-num">01</div>
+                <div class="s-title">Get Started</div>
+                <p class="s-desc">With our intuitive setup, you're up and running in minutes.</p>
+              </div>
+              <div class="step-item">
+                <div class="s-num">02</div>
+                <div class="s-title">Customize and Configure</div>
+                <p class="s-desc">Adapt Area to your specific requirements and preferences.</p>
+              </div>
+              <div class="step-item">
+                <div class="s-num">03</div>
+                <div class="s-title">Grow Your Business</div>
+                <p class="s-desc">Make informed decisions to exceed your goals.</p>
+              </div>
+            </div><br />
+            <div class="map-img-wrap">
+              <img src="Resources/img1.jpeg" class="map-img" alt="Map visual">
+            </div>
+          </div>
+    </section>
+
+    <!-- ══════════ CONNECT ══════════ -->
+    <section class="connect" id="contact-us">
+      <div class="container">
+        <h2 class="connect-h2">Connect with us</h2>
+        <p class="connect-sub">Schedule a quick call to learn how Area can turn your regional data into a powerful
+          advantage.</p>
+        <button class="btn btn-fill connect-btn">Learn More ↗</button>
+      </div>
+    </section>
+
+    <!-- ══════════ FOOTER ══════════ -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <nav class="footer-links">
+            <a href="#benefits">Benefits</a>
+            <a href="#specifications">Specifications</a>
+            <a href="#how-to">How-to</a>
+          </nav>
+        </div>
+        <div class="footer-bot">
+          <div class="footer-brand">
+            <img src="Resources/manLogo.jpeg" class="footer-logo-img" alt="Area logo" />
+            <span class="footer-copy">© Area.</span>
+            <span class="footer-copy-date">2025</span>
+          </div>
+          <span class="footer-copy footer-copy-right">All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /hero -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
